@@ -11,7 +11,7 @@ const WalletInfoCard = () => {
         <p className="wb-text"> Wallet Balance</p>
         <p className="wb-value"> N 14.61 </p>
       </div>
-      <ul className="wallet-actiosn">
+      <ul className="wallet-actions">
         <li>
           <span className="wa-icon">
             <FontAwesomeIcon icon="bars" color="white" />

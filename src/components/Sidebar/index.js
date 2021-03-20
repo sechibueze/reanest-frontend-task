@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import "./Sidebar.scss";
 import userThumbnailPlaceholder from "../../assets/images/reanest-board-desktop.jpg";
-const links = [
+export const links = [
   {
     name: "Dashboard",
     icon: "home",
@@ -42,7 +42,7 @@ const links = [
   },
 ];
 const Sidebar = () => {
-  const [sidebarMenu, setSidebarMenu] = useState(null);
+  const [sidebarMenu, setSidebarMenu] = useState(links);
   useEffect(() => {
     const fetchMenuLinks = async () => {
       const uri = "https://601d848abe5f340017a19c29.mockapi.io/menu";

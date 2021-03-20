@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PaymentOptions /> renders correctly <PaymentOptions /> matches snapshot 1`] = `ShallowWrapper {}`;

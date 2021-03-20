@@ -17,8 +17,7 @@ const PaymentOptions = () => {
       </span>
       <div className="payment-options-container">
         <span className="arrow">
-          {" "}
-          <FontAwesomeIcon icon={["fas", "angle-left"]} size="2x" />{" "}
+          <FontAwesomeIcon icon={["fas", "angle-left"]} size="2x" />
         </span>
         <ul className="payment-icons">
           <li>
