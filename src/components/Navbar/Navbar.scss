@@ -1,7 +1,7 @@
 @import "../../assets/theme/colors.scss";
 
 #menu-checkbox {
-  display: block;
+  display: none;
   user-select: none;
 }
 #menu-checkbox:checked ~ .wrapper .sidebar {
