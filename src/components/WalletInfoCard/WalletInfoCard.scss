@@ -1,0 +1,60 @@
+@import "../../assets/theme/colors.scss";
+.wallet-info {
+  background-color: $light-gray;
+  border-radius: 0.4rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+  box-shadow: 0 0 2px $light-gray;
+}
+.wallet-info-meta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.wallet-balance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .wb-text {
+    font-size: 0.8rem;
+    margin: 0.25rem auto;
+  }
+  .wb-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.wallet-actiosn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  & li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    .wa-icon {
+      background-color: $blue;
+      padding: 0.6rem;
+      border-radius: 50%;
+      text-align: center;
+      margin: auto;
+    }
+    .wallet-action-text {
+      font-size: 0.6rem;
+      font-weight: bold;
+      margin: 0.3rem auto;
+    }
+  }
+}

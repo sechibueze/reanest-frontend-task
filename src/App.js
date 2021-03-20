@@ -1,3 +1,4 @@
-const App = () => <h1> Reanest board </h1>;
+import { Dashboard } from "./pages";
+const App = () => <Dashboard />;
 
 export default App;

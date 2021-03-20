@@ -1,0 +1,55 @@
+@import "../../assets//theme/colors.scss";
+.payment-wrapper {
+  display: none;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 0.8rem;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: stretch;
+  // align-items: center;
+  // display: grid;
+  grid-template-columns: 1fr auto;
+
+  background-color: $white;
+  @media screen and (min-width: $mobile-breakpoint) {
+    & {
+      display: grid;
+    }
+  }
+}
+.p-intro {
+  align-self: center;
+}
+.payment-options-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.arrow {
+  align-self: center;
+  padding: 0rem 1rem;
+}
+.payment-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.payment-icons li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+.po-name {
+  font-size: 0.5rem;
+  text-align: center;
+  color: $light-gray;
+  margin-top: 0.5rem;
+}

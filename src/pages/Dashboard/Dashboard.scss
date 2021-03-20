@@ -1,0 +1,30 @@
+@import "../../assets/theme/colors.scss";
+.wrapper {
+  @media screen and (min-width: $mobile-breakpoint) {
+    & {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+    }
+  }
+}
+.dashboard-main {
+  background-color: $body-bg;
+  @media screen and (min-width: $mobile-breakpoint) {
+    & {
+      margin: 0.5rem;
+    }
+  }
+}
+.card-wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 1.25rem;
+  margin: 1rem 0.5rem;
+  @media screen and (min-width: $mobile-breakpoint) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: none;
+      column-gap: 1.25rem;
+    }
+  }
+}
