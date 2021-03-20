@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Fragment } from "react";
 import "./PaymentOptions.scss";
 const PaymentOptions = () => {
   return (
     <div className="payment-wrapper">
       <span className="p-intro">
-        MAKE PAYMENTS{" "}
+        <Fragment> MAKE PAYMENTS</Fragment>
         <FontAwesomeIcon
           icon={["fas", "info-circle"]}
           size="0.25x"

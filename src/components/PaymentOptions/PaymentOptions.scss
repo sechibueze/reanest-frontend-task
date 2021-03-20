@@ -4,11 +4,6 @@
   padding: 1rem;
   margin: 1rem auto;
   border-radius: 0.8rem;
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: stretch;
-  // align-items: center;
-  // display: grid;
   grid-template-columns: 1fr auto;
 
   background-color: $white;
@@ -20,6 +15,8 @@
 }
 .p-intro {
   align-self: center;
+  font-size: 0.85rem;
+  font-weight: bold;
 }
 .payment-options-container {
   justify-content: center;
@@ -30,6 +27,7 @@
 .arrow {
   align-self: center;
   padding: 0rem 1rem;
+  color: $blue;
 }
 .payment-icons {
   display: flex;
@@ -37,6 +35,8 @@
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+  color: $greyed-out;
+  opacity: 0.8;
 }
 
 .payment-icons li {
@@ -50,6 +50,6 @@
 .po-name {
   font-size: 0.5rem;
   text-align: center;
-  color: $light-gray;
+  color: #444;
   margin-top: 0.5rem;
 }

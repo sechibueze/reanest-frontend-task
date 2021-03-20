@@ -46,13 +46,16 @@ const Sidebar = () => {
   useEffect(() => {
     const fetchMenuLinks = async () => {
       const uri = "https://601d848abe5f340017a19c29.mockapi.io/menu";
+      // Whatever happens, overide api response with hardcoded data
+      // some icons names from api are not in free version of fontawesome
       axios
         .get(uri)
         .then(({ data }) => {
           console.log("result ", data);
-          setSidebarMenu(data);
+          setSidebarMenu(links);
         })
         .catch((err) => {
+          setSidebarMenu(links);
           console.log("err ", { err });
         });
     };
@@ -82,11 +85,10 @@ const Sidebar = () => {
       </div>
 
       <ul className="sidebar-menu">
-        {
-          // sidebarMenu &&
-          // Array.isArray(sidebarMenu) &&
-          // sidebarMenu.length > 0 &&
-          links.map((menu) => {
+        {sidebarMenu &&
+          Array.isArray(sidebarMenu) &&
+          sidebarMenu.length > 0 &&
+          sidebarMenu.map((menu) => {
             return (
               <li className="sidebar-link" key={menu.link}>
                 <span className="icon-border">
@@ -102,8 +104,7 @@ const Sidebar = () => {
                 </a>
               </li>
             );
-          })
-        }
+          })}
       </ul>
     </div>
   );

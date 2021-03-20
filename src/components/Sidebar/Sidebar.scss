@@ -8,13 +8,13 @@
   top: 0;
   left: 0;
   background-color: $white;
-  @media screen and (min-width: $mobile-breakpoint) {
-    & {
-      display: block;
-      position: relative;
-      margin-right: 0.5rem;
-    }
-  }
+  // @media screen and (min-width: $mobile-breakpoint) {
+  //   & {
+  //     display: block;
+  //     position: relative;
+  //     margin-right: 0.5rem;
+  //   }
+  // }
 }
 .sidebar-header {
   background-color: $blue;
