@@ -15,7 +15,7 @@ const Dashboard = () => {
     setLoading(true);
     console.log("Use effect");
     async function fetchData() {
-      const uri = "http://601d848abe5f340017a19c29.mockapi.io/dashboard";
+      const uri = "https://601d848abe5f340017a19c29.mockapi.io/dashboard";
       const res = await fetch(uri);
       res
         .json()
