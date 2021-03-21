@@ -7,7 +7,6 @@ const CategoryList = () => {
         <span className="category-title"> Categoris</span>
         <span className="category-controls">
           <span className="lt">
-            {" "}
             <FontAwesomeIcon icon={["fas", "angle-left"]} />{" "}
           </span>
           <span className="gt">

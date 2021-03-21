@@ -1,9 +1,12 @@
 import "./CashRequestCard.scss";
-const CashRequestCard = () => {
+const CashRequestCard = ({ cashRequestData }) => {
   return (
     <div className="cash-request-card">
-      <p> Need cash instantly ?</p>
-      <span className="cash-request-cta"> Apply for a loan</span>
+      <p> {cashRequestData.title} </p>
+      <a className="cash-request-cta" href={cashRequestData.cta.link}>
+        {" "}
+        {cashRequestData.cta.title}{" "}
+      </a>
     </div>
   );
 };

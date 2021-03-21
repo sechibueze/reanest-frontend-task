@@ -1,15 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./WalletInfoCard.scss";
-const WalletInfoCard = () => {
+const WalletInfoCard = ({ walletInfo }) => {
+  const {
+    balance: { title, currency, value },
+  } = walletInfo;
   return (
     <div className="wallet-info">
       <div className="wallet-info-meta">
-        <span> YOUR WALLET </span>
+        <span className="wi-title"> {walletInfo.title} </span>
         <span> Feb 2, 2021 </span>
       </div>
       <div className="wallet-balance">
-        <p className="wb-text"> Wallet Balance</p>
-        <p className="wb-value"> N 14.61 </p>
+        <p className="wb-text"> {title} </p>
+        <p className="wb-value"> {`${currency} ${value}`} </p>
       </div>
       <ul className="wallet-actions">
         <li>
