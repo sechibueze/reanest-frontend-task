@@ -4,13 +4,13 @@ const CategoryList = () => {
   return (
     <div className="category-icons-card">
       <div className="category-intro">
-        <span className="category-title"> Categoris</span>
+        <span className="category-title"> Categories</span>
         <span className="category-controls">
           <span className="lt">
-            <FontAwesomeIcon icon={["fas", "angle-left"]} />{" "}
+            <FontAwesomeIcon icon={["fas", "angle-left"]} />
           </span>
           <span className="gt">
-            <FontAwesomeIcon icon={["fas", "angle-right"]} />{" "}
+            <FontAwesomeIcon icon={["fas", "angle-right"]} />
           </span>
         </span>
       </div>
@@ -21,7 +21,7 @@ const CategoryList = () => {
               icon={["far", "credit-card"]}
               size="2x"
               fixedWidth
-            />{" "}
+            />
           </span>
           <span className="category-text"> Mobile &amp; internet data </span>
         </li>

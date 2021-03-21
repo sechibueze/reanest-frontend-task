@@ -1,11 +1,11 @@
 import { shallow } from "enzyme";
 import ProductLayout from "../index";
-const productCount = 2;
+const productCount = 3;
 describe("<Navbar /> renders correctly", () => {
   const component = shallow(<ProductLayout />);
   const productLayoutWrapper = component.find(".product-layout-wrapper");
   const productItems = component.find(".product-item");
-  it("Navbar matches snapshot", () => {
+  it("ProductLayout matches snapshot", () => {
     expect(component).toMatchSnapshot();
   });
   it("<ProductLayout /> was rendered correctly", () => {

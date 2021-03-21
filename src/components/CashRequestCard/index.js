@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+import { testData } from "../../_data";
 import "./CashRequestCard.scss";
 const CashRequestCard = ({ cashRequestData }) => {
   return (
@@ -10,5 +12,10 @@ const CashRequestCard = ({ cashRequestData }) => {
     </div>
   );
 };
-
+CashRequestCard.defaultProps = {
+  cashRequestData: testData.loan,
+};
+CashRequestCard.propTypes = {
+  cashRequestData: PropTypes.object.isRequired,
+};
 export default CashRequestCard;

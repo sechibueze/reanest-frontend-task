@@ -6,6 +6,7 @@ import PaymentOptions from "../../components/PaymentOptions";
 import ProductLayout from "../../components/ProductLayout";
 import Sidebar from "../../components/Sidebar";
 import WalletInfoCard from "../../components/WalletInfoCard";
+
 import "./Dashboard.scss";
 const Dashboard = () => {
   const [data, setData] = useState(null);
@@ -38,7 +39,7 @@ const Dashboard = () => {
     <Fragment>
       <Navbar />
       <div className="wrapper">
-        <Sidebar user={data.user} />
+        <Sidebar />
         <main className="dashboard-main">
           <div className="card-wrapper">
             <WalletInfoCard walletInfo={data.wallet} />

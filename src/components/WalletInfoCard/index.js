@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { testData } from "../../_data";
 import "./WalletInfoCard.scss";
 const WalletInfoCard = ({ walletInfo }) => {
   const {
@@ -17,19 +18,19 @@ const WalletInfoCard = ({ walletInfo }) => {
       <ul className="wallet-actions">
         <li>
           <span className="wa-icon">
-            <FontAwesomeIcon icon="bars" color="white" />
+            <FontAwesomeIcon icon="money-check-alt" color="white" />
           </span>
           <span className="wallet-action-text"> Withdraw</span>
         </li>
         <li>
           <span className="wa-icon">
-            <FontAwesomeIcon icon="bars" color="white" />
+            <FontAwesomeIcon icon="credit-card" color="white" />
           </span>
           <span className="wallet-action-text"> Fund wallet</span>
         </li>
         <li>
           <span className="wa-icon">
-            <FontAwesomeIcon icon="bars" color="white" />
+            <FontAwesomeIcon icon="landmark" color="white" />
           </span>
           <span className="wallet-action-text"> Transactions</span>
         </li>
@@ -37,5 +38,7 @@ const WalletInfoCard = ({ walletInfo }) => {
     </div>
   );
 };
-
+WalletInfoCard.defaultProps = {
+  walletInfo: testData.wallet,
+};
 export default WalletInfoCard;

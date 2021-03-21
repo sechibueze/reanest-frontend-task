@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Navbar /> renders correctly Navbar matches snapshot 1`] = `ShallowWrapper {}`;
+
+exports[`<Navbar /> renders correctly ProductLayout matches snapshot 1`] = `ShallowWrapper {}`;

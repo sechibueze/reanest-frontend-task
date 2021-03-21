@@ -1,12 +1,13 @@
 import productImage from "../../assets/images/icon.jpg";
+import { testData } from "../../_data";
 import "./ProductLayout.scss";
 const ProductLayout = ({ transactions }) => {
   return (
     <div className="product-layout-wrapper">
-      {transactions.items.map((item) => {
-        const { id, image, title, category, date, status } = item;
+      {transactions.items.map((item, idx) => {
+        const { image, title, category, date, status } = item;
         return (
-          <div className="product-item" key={id}>
+          <div className="product-item" key={idx}>
             <img
               src={image || productImage}
               alt="product visuals"
@@ -32,5 +33,7 @@ const ProductLayout = ({ transactions }) => {
     </div>
   );
 };
-
+ProductLayout.defaultProps = {
+  transactions: testData.transactions,
+};
 export default ProductLayout;

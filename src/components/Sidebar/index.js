@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import "./Sidebar.scss";
+import { testData } from "../../_data";
 // import userThumbnailPlaceholder from "../../assets/images/reanest-board-desktop.jpg";
 export const links = [
   {
@@ -98,7 +99,7 @@ const Sidebar = ({ user }) => {
                 <span className="icon-border">
                   <FontAwesomeIcon
                     icon={[menu.prefix, menu.icon]}
-                    size="1.5x"
+                    size={12}
                     fixedWidth
                   />
                 </span>
@@ -114,4 +115,7 @@ const Sidebar = ({ user }) => {
   );
 };
 
+Sidebar.defaultProps = {
+  user: testData.user,
+};
 export default Sidebar;

@@ -1,6 +1,6 @@
 import { shallow } from "enzyme";
 import PaymentOptions from "../index";
-const paymentChannelsCount = 5;
+const paymentChannelsCount = 6;
 describe("<PaymentOptions /> renders correctly", () => {
   const component = shallow(<PaymentOptions />);
   const paymentOpts = component.find(".payment-icons li");

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react";
+import { testData } from "../../_data";
 import "./PaymentOptions.scss";
 const PaymentOptions = ({ billPayment }) => {
   const icons = [
@@ -47,4 +48,7 @@ const PaymentOptions = ({ billPayment }) => {
   );
 };
 
+PaymentOptions.defaultProps = {
+  billPayment: testData.billspayment,
+};
 export default PaymentOptions;
